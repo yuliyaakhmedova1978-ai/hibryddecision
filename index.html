@@ -1,23 +1,663 @@
+```html
 <!DOCTYPE html>
 <html lang="pl">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>HIBRYD DECISION</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HIBRYD DECISION | Naprawa baterii hybrydowych Toyota Warszawa</title>
+
+  <meta name="description" content="HIBRYD DECISION Warszawa. Naprawa, regeneracja i modernizacja baterii hybrydowych Toyota. Wymiana NiMH na litowe LiFePO4. Diagnostyka, testy, balansowanie, gwarancja." />
+  <meta name="keywords" content="naprawa baterii hybrydowych Warszawa, regeneracja baterii Toyota Prius, bateria hybrydowa Toyota, wymiana NiMH na LiFePO4, serwis hybryd Toyota Warszawa" />
+  <meta name="robots" content="index, follow" />
+
+  <meta property="og:title" content="HIBRYD DECISION | Naprawa baterii hybrydowych Toyota" />
+  <meta property="og:description" content="Profesjonalny serwis baterii hybrydowych Toyota w Warszawie. Diagnostyka, regeneracja, wymiana ogniw, modernizacja NiMH na LiFePO4." />
+  <meta property="og:image" content="baner.jpg" />
+  <meta property="og:type" content="website" />
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #050806;
+      color: #f4f4f4;
+      line-height: 1.6;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .container {
+      width: 92%;
+      max-width: 1180px;
+      margin: auto;
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 999;
+      background: rgba(0, 0, 0, 0.88);
+      backdrop-filter: blur(8px);
+      border-bottom: 1px solid rgba(0, 255, 100, 0.25);
+    }
+
+    .nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 14px 0;
+      gap: 16px;
+    }
+
+    .logo {
+      font-size: 22px;
+      font-weight: 900;
+      letter-spacing: 1px;
+    }
+
+    .logo span {
+      color: #7bdc22;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 18px;
+      font-size: 14px;
+      font-weight: 700;
+    }
+
+    .nav-links a:hover {
+      color: #7bdc22;
+    }
+
+    .top-call {
+      background: #7bdc22;
+      color: #000;
+      padding: 10px 16px;
+      border-radius: 30px;
+      font-weight: 900;
+      white-space: nowrap;
+    }
+
+    .hero {
+      min-height: 92vh;
+      background:
+        linear-gradient(90deg, rgba(0, 0, 0, 0.94), rgba(0, 0, 0, 0.62), rgba(0, 0, 0, 0.30)),
+        url("baner.jpg") center/cover no-repeat;
+      display: flex;
+      align-items: center;
+      padding: 70px 0;
+    }
+
+    .hero-content {
+      max-width: 720px;
+    }
+
+    .badge {
+      display: inline-block;
+      background: rgba(123, 220, 34, 0.15);
+      border: 1px solid #7bdc22;
+      color: #7bdc22;
+      padding: 8px 14px;
+      border-radius: 30px;
+      font-weight: 800;
+      margin-bottom: 18px;
+    }
+
+    h1 {
+      font-size: clamp(42px, 8vw, 92px);
+      line-height: 0.95;
+      font-weight: 1000;
+      margin-bottom: 18px;
+    }
+
+    h1 span {
+      color: #7bdc22;
+    }
+
+    .hero h2 {
+      font-size: clamp(20px, 4vw, 36px);
+      margin-bottom: 18px;
+    }
+
+    .hero p {
+      font-size: 18px;
+      color: #ddd;
+      margin-bottom: 24px;
+    }
+
+    .buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      margin-top: 24px;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 50px;
+      padding: 14px 20px;
+      border-radius: 12px;
+      font-weight: 900;
+      transition: 0.25s;
+    }
+
+    .btn-main {
+      background: #7bdc22;
+      color: #000;
+    }
+
+    .btn-dark {
+      border: 1px solid #7bdc22;
+      color: #7bdc22;
+      background: rgba(0, 0, 0, 0.45);
+    }
+
+    .btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 0 24px rgba(123, 220, 34, 0.35);
+    }
+
+    section {
+      padding: 70px 0;
+    }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 38px;
+    }
+
+    .section-title h2 {
+      font-size: clamp(28px, 5vw, 46px);
+    }
+
+    .section-title span {
+      color: #7bdc22;
+    }
+
+    .grid {
+      display: grid;
+      gap: 20px;
+    }
+
+    .services {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    .card {
+      background: linear-gradient(180deg, #101510, #090c09);
+      border: 1px solid rgba(123, 220, 34, 0.25);
+      border-radius: 18px;
+      padding: 24px;
+      box-shadow: 0 0 30px rgba(0, 0, 0, 0.35);
+    }
+
+    .card h3 {
+      color: #7bdc22;
+      margin-bottom: 10px;
+      font-size: 21px;
+    }
+
+    .card p {
+      color: #d4d4d4;
+    }
+
+    .upgrade {
+      background:
+        linear-gradient(90deg, rgba(0, 0, 0, 0.92), rgba(4, 40, 12, 0.75)),
+        url("baner.jpg") center/cover no-repeat;
+      border-top: 1px solid rgba(123, 220, 34, 0.3);
+      border-bottom: 1px solid rgba(123, 220, 34, 0.3);
+    }
+
+    .upgrade-box {
+      background: rgba(0, 0, 0, 0.72);
+      border: 1px solid rgba(123, 220, 34, 0.45);
+      border-radius: 22px;
+      padding: 34px;
+    }
+
+    .upgrade-box h2 {
+      font-size: clamp(28px, 5vw, 48px);
+      margin-bottom: 14px;
+    }
+
+    .upgrade-box h2 span {
+      color: #7bdc22;
+    }
+
+    .list {
+      margin-top: 20px;
+      display: grid;
+      gap: 12px;
+    }
+
+    .list div {
+      background: rgba(255, 255, 255, 0.06);
+      border-left: 4px solid #7bdc22;
+      padding: 13px 16px;
+      border-radius: 10px;
+    }
+
+    .why {
+      grid-template-columns: repeat(4, 1fr);
+    }
+
+    .mini {
+      text-align: center;
+    }
+
+    .mini .icon {
+      font-size: 36px;
+      margin-bottom: 8px;
+    }
+
+    .contact-box {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+      align-items: stretch;
+    }
+
+    .contact-card {
+      background: #0a0f0a;
+      border: 1px solid rgba(123, 220, 34, 0.35);
+      border-radius: 20px;
+      padding: 28px;
+    }
+
+    .contact-card h3 {
+      color: #7bdc22;
+      margin-bottom: 16px;
+      font-size: 26px;
+    }
+
+    .contact-line {
+      margin: 14px 0;
+      font-size: 18px;
+    }
+
+    iframe {
+      width: 100%;
+      height: 100%;
+      min-height: 340px;
+      border: 0;
+      border-radius: 20px;
+      filter: grayscale(20%) contrast(110%);
+    }
+
+    .chat-widget {
+      position: fixed;
+      right: 18px;
+      bottom: 18px;
+      z-index: 1000;
+      width: 340px;
+      max-width: calc(100vw - 32px);
+      background: #080c08;
+      border: 1px solid rgba(123, 220, 34, 0.55);
+      border-radius: 18px;
+      overflow: hidden;
+      box-shadow: 0 0 35px rgba(0, 0, 0, 0.65);
+    }
+
+    .chat-header {
+      background: #7bdc22;
+      color: #000;
+      padding: 12px 14px;
+      font-weight: 900;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      cursor: pointer;
+    }
+
+    .chat-body {
+      padding: 14px;
+      display: block;
+    }
+
+    .chat-message {
+      background: #111811;
+      border-radius: 14px;
+      padding: 12px;
+      margin-bottom: 10px;
+      font-size: 14px;
+      color: #eaeaea;
+    }
+
+    .chat-options {
+      display: grid;
+      gap: 8px;
+    }
+
+    .chat-options button {
+      border: 1px solid rgba(123, 220, 34, 0.5);
+      background: rgba(123, 220, 34, 0.08);
+      color: #fff;
+      padding: 10px;
+      border-radius: 10px;
+      cursor: pointer;
+      text-align: left;
+      font-weight: 700;
+    }
+
+    .chat-options button:hover {
+      background: rgba(123, 220, 34, 0.22);
+    }
+
+    .chat-answer {
+      margin-top: 10px;
+      color: #dcdcdc;
+      font-size: 14px;
+    }
+
+    footer {
+      background: #020402;
+      padding: 28px 0;
+      text-align: center;
+      color: #aaa;
+      border-top: 1px solid rgba(123, 220, 34, 0.25);
+    }
+
+    .floating-call {
+      display: none;
+      position: fixed;
+      left: 12px;
+      right: 12px;
+      bottom: 12px;
+      z-index: 1100;
+      background: #7bdc22;
+      color: #000;
+      padding: 15px;
+      text-align: center;
+      border-radius: 14px;
+      font-weight: 1000;
+      box-shadow: 0 0 30px rgba(0, 0, 0, 0.65);
+    }
+
+    @media (max-width: 900px) {
+      .nav-links {
+        display: none;
+      }
+
+      .top-call {
+        font-size: 13px;
+        padding: 9px 12px;
+      }
+
+      .hero {
+        min-height: auto;
+        padding: 70px 0 80px;
+        background:
+          linear-gradient(180deg, rgba(0, 0, 0, 0.95), rgba(0, 0, 0, 0.72)),
+          url("baner.jpg") center/cover no-repeat;
+      }
+
+      .services,
+      .why,
+      .contact-box {
+        grid-template-columns: 1fr;
+      }
+
+      .buttons .btn {
+        width: 100%;
+      }
+
+      .chat-widget {
+        display: none;
+      }
+
+      .floating-call {
+        display: block;
+      }
+
+      footer {
+        padding-bottom: 86px;
+      }
+    }
+  </style>
 </head>
+
 <body>
+  <header>
+    <div class="container nav">
+      <a href="#" class="logo">HIBRYD <span>DECISION</span></a>
+      <nav class="nav-links">
+        <a href="#uslugi">Usługi</a>
+        <a href="#lifepo4">LiFePO4</a>
+        <a href="#kontakt">Kontakt</a>
+        <a href="https://www.tiktok.com/@alexbutenko?_r=1&_t=ZN-97E6IITzLhm" target="_blank">TikTok</a>
+      </nav>
+      <a class="top-call" href="tel:+48576996964">📞 +48 576 996 964</a>
+    </div>
+  </header>
 
-<h1>HIBRYD DECISION</h1>
+  <main>
+    <section class="hero">
+      <div class="container hero-content">
+        <div class="badge">Warszawa • Toyota Hybrid • Serwis baterii HV</div>
+        <h1>HIBRYD <span>DECISION</span></h1>
+        <h2>Naprawa, regeneracja i modernizacja baterii hybrydowych Toyota</h2>
+        <p>
+          Diagnostyka komputerowa, wymiana uszkodzonych ogniw, balansowanie pakietów HV,
+          regeneracja baterii oraz modernizacja starych baterii niklowych NiMH na nowoczesne
+          litowe LiFePO4.
+        </p>
 
-<h2>Naprawa i regeneracja baterii hybrydowych</h2>
+        <div class="buttons">
+          <a class="btn btn-main" href="tel:+48576996964">📞 Zadzwoń teraz</a>
+          <a class="btn btn-dark" href="https://wa.me/48576996964" target="_blank">💬 WhatsApp</a>
+          <a class="btn btn-dark" href="https://www.tiktok.com/@alexbutenko?_r=1&_t=ZN-97E6IITzLhm" target="_blank">🎵 TikTok</a>
+        </div>
+      </div>
+    </section>
 
-<p>Diagnostyka baterii hybrydowych Toyota</p>
+    <section id="uslugi">
+      <div class="container">
+        <div class="section-title">
+          <h2>Nasze <span>usługi</span></h2>
+          <p>Profesjonalna obsługa baterii hybrydowych Toyota w Warszawie</p>
+        </div>
 
-<p>Regeneracja pakietów HV</p>
+        <div class="grid services">
+          <div class="card">
+            <h3>Diagnostyka baterii HV</h3>
+            <p>Sprawdzenie kondycji baterii, błędów systemu hybrydowego, napięć modułów i realnej wydajności pakietu.</p>
+          </div>
 
-<p>Warszawa, ul. Gładka 13A</p>
+          <div class="card">
+            <h3>Regeneracja baterii</h3>
+            <p>Przywracanie sprawności baterii hybrydowej poprzez testy, selekcję modułów i balansowanie pakietu.</p>
+          </div>
 
-<p>Tel: +48 576 996 964</p>
+          <div class="card">
+            <h3>Wymiana ogniw</h3>
+            <p>Wymiana uszkodzonych lub zużytych ogniw na sprawne elementy dobrane pod parametry baterii.</p>
+          </div>
 
+          <div class="card">
+            <h3>NiMH → LiFePO4</h3>
+            <p>Modernizacja baterii niklowej NiMH na nowoczesne litowe ogniwa LiFePO4 dla większej trwałości i stabilności.</p>
+          </div>
+
+          <div class="card">
+            <h3>Testy i balansowanie</h3>
+            <p>Kontrola napięć, obciążenia, temperatur, rezystancji oraz wyrównanie parametrów pakietu baterii.</p>
+          </div>
+
+          <div class="card">
+            <h3>Gwarancja na usługę</h3>
+            <p>Każda naprawa wykonywana jest z kontrolą jakości. Dajemy gwarancję na wykonaną pracę i użyte podzespoły.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="lifepo4" class="upgrade">
+      <div class="container">
+        <div class="upgrade-box">
+          <h2>Zamiana baterii <span>NiMH na LiFePO4</span></h2>
+          <p>
+            Stare baterie niklowe NiMH w hybrydach Toyota z czasem tracą pojemność,
+            powodują błędy systemu, słabsze osiągi i większe spalanie. Modernizacja do LiFePO4
+            pozwala poprawić stabilność, żywotność i kulturę pracy układu hybrydowego.
+          </p>
+
+          <div class="list">
+            <div>✅ Większa trwałość i lepsza stabilność pracy baterii</div>
+            <div>✅ Mniejsza masa i nowocześniejsza technologia</div>
+            <div>✅ Lepsza efektywność układu hybrydowego</div>
+            <div>✅ Rozwiązanie dla Toyota Prius, Auris, Yaris, Corolla i innych modeli hybrydowych</div>
+          </div>
+
+          <div class="buttons">
+            <a class="btn btn-main" href="tel:+48576996964">Umów diagnostykę</a>
+            <a class="btn btn-dark" href="https://wa.me/48576996964" target="_blank">Napisz na WhatsApp</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="section-title">
+          <h2>Dlaczego <span>HIBRYD DECISION</span>?</h2>
+        </div>
+
+        <div class="grid why">
+          <div class="card mini">
+            <div class="icon">⚡</div>
+            <h3>Szybka diagnostyka</h3>
+            <p>Sprawdzamy realny stan baterii przed naprawą.</p>
+          </div>
+
+          <div class="card mini">
+            <div class="icon">🔋</div>
+            <h3>Technologia HV</h3>
+            <p>Pracujemy z bateriami wysokiego napięcia Toyota.</p>
+          </div>
+
+          <div class="card mini">
+            <div class="icon">🛡️</div>
+            <h3>Gwarancja</h3>
+            <p>Naprawy wykonujemy odpowiedzialnie i z kontrolą jakości.</p>
+          </div>
+
+          <div class="card mini">
+            <div class="icon">🌿</div>
+            <h3>Ekologia</h3>
+            <p>Regeneracja to mniej odpadów i drugie życie baterii.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="kontakt">
+      <div class="container">
+        <div class="section-title">
+          <h2>Kontakt <span>i lokalizacja</span></h2>
+          <p>Zadzwoń i umów diagnostykę baterii hybrydowej</p>
+        </div>
+
+        <div class="contact-box">
+          <div class="contact-card">
+            <h3>HIBRYD DECISION</h3>
+            <div class="contact-line">📍 Warszawa, ul. Gładka 13A</div>
+            <div class="contact-line">📞 <a href="tel:+48576996964">+48 576 996 964</a></div>
+            <div class="contact-line">💬 <a href="https://wa.me/48576996964" target="_blank">WhatsApp: +48 576 996 964</a></div>
+            <div class="contact-line">🎵 <a href="https://www.tiktok.com/@alexbutenko?_r=1&_t=ZN-97E6IITzLhm" target="_blank">TikTok: @alexbutenko</a></div>
+            <div class="contact-line">🕘 Poniedziałek - Piątek: 9:00 - 18:00</div>
+            <div class="contact-line">🕘 Sobota: 9:00 - 14:00</div>
+
+            <div class="buttons">
+              <a class="btn btn-main" href="tel:+48576996964">Zadzwoń</a>
+              <a class="btn btn-dark" href="https://www.google.com/maps/search/?api=1&query=Warszawa%20ul.%20G%C5%82adka%2013A" target="_blank">Otwórz mapę</a>
+            </div>
+          </div>
+
+          <iframe
+            src="https://www.google.com/maps?q=Warszawa%20ul.%20G%C5%82adka%2013A&output=embed"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div class="chat-widget">
+    <div class="chat-header" onclick="toggleChat()">
+      🤖 Doradca AI
+      <span id="chatToggle">−</span>
+    </div>
+
+    <div class="chat-body" id="chatBody">
+      <div class="chat-message">
+        Dzień dobry! Czy Twoja Toyota Hybrid pokazuje błędy baterii, słabiej jedzie albo częściej uruchamia silnik spalinowy?
+      </div>
+
+      <div class="chat-options">
+        <button onclick="chatAnswer(1)">Mam błąd baterii hybrydowej</button>
+        <button onclick="chatAnswer(2)">Auto więcej pali i słabiej jedzie</button>
+        <button onclick="chatAnswer(3)">Interesuje mnie NiMH → LiFePO4</button>
+        <button onclick="chatAnswer(4)">Chcę umówić diagnostykę</button>
+      </div>
+
+      <div class="chat-answer" id="chatAnswer"></div>
+    </div>
+  </div>
+
+  <a class="floating-call" href="tel:+48576996964">📞 Zadzwoń: +48 576 996 964</a>
+
+  <footer>
+    <div class="container">
+      <strong>HIBRYD DECISION</strong><br />
+      Naprawa i modernizacja baterii hybrydowych Toyota • Warszawa, ul. Gładka 13A<br />
+      <a href="tel:+48576996964">+48 576 996 964</a>
+    </div>
+  </footer>
+
+  <script>
+    function toggleChat() {
+      const body = document.getElementById("chatBody");
+      const toggle = document.getElementById("chatToggle");
+      if (body.style.display === "none") {
+        body.style.display = "block";
+        toggle.textContent = "−";
+      } else {
+        body.style.display = "none";
+        toggle.textContent = "+";
+      }
+    }
+
+    function chatAnswer(type) {
+      const box = document.getElementById("chatAnswer");
+      const phone = '<br><br><a class="btn btn-main" href="tel:+48576996964">📞 Zadzwoń i umów diagnostykę</a>';
+
+      const answers = {
+        1: "Błąd baterii hybrydowej może oznaczać zużyte ogniwa, nierówne napięcia albo problem z pakietem HV. Najlepszy pierwszy krok to diagnostyka komputerowa i test baterii.",
+        2: "Większe spalanie, częsta praca silnika spalinowego i słabsza dynamika często wskazują na spadek wydajności baterii hybrydowej. Warto sprawdzić stan modułów.",
+        3: "Modernizacja NiMH na LiFePO4 to rozwiązanie dla osób, które chcą poprawić trwałość, stabilność i efektywność układu hybrydowego. Sprawdzimy, czy Twoje auto nadaje się do takiej modernizacji.",
+        4: "Najlepiej umówić termin telefonicznie. Przygotuj model auta, rocznik i objawy. Szybko powiemy, od czego zacząć."
+      };
+
+      box.innerHTML = '<div class="chat-message">' + answers[type] + phone + '</div>';
+    }
+  </script>
 </body>
 </html>
+```
